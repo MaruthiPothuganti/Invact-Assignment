@@ -1,0 +1,70 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.usersContainer {
+  padding: 1rem;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.user {
+  width: 10rem;
+  height: auto;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.userIcon {
+  background-color: blue;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.singleUser {
+  display: flex;
+  width: 100%;
+  max-width: 15rem;
+  justify-content: space-between;
+}
+
+.userList {
+  flex-basis: 300px;
+}
+
+@media screen and (max-width: 640px) {
+  .App {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+  }
+  .userContainer {
+    width: 100%;
+  }
+  .userList {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .singleUser {
+    width: 100%;
+    max-width: 15rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
